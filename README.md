@@ -6,7 +6,9 @@ paper with this same title, tested in the database of VSB100 and evaluated using
 metrics from the project A Unified Video Segmentation Benchmark: Annotation, Metrics 
 and Analysis by Fabio Galasso.
 
-To use this project, open the ppal.m file. It has 2 parts, the first one is to 
+Before using this project ensure having downloaded the whole files incluiding the 
+BenchmarBseg.rar file that is in the master branch and have them in the same folder.
+To run this project, open the ppal.m file. It has 2 parts, the first one is to 
 segment the videos which will show a menu to test one example video or use a folder 
 of videos. The second part is to evaluate the segmentations of the video sequences. 
 For this make a folder for each video in …\NISeg\BenchmarkBseg\Evaluation\Algorithm_Bseg\Ucm2 
@@ -15,6 +17,6 @@ run the first part to save the segmentations in the folders just created, then
 comment this part and uncomment the second one and run it to get the metrics of 
 spatial coherency and temporal coherency in the MATLAB command window.
 
-This project was run in the MATLAB version R2016a.
+This project run in the MATLAB version R2016a.
 
-For any questions you can contact me by email: raul.rng07@gmail.com.
+For any questions you can contact us by email: raul.rng07@gmail.com and juan.rq@chihuahua.tecnm.mx.
