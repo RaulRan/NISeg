@@ -1,9 +1,26 @@
-Video Object Segmentation Algorithm with spatial and temporal coherence based on the Visual Cortex Structure.
+A Visual Object Segmentation Algorithm with Spatial and Temporal Coherence Inspired by the Architecture of the Visual Cortex.
 
-This project segment objects in video sequences using the method explained in the paper with this same title, tested in the database of VSB100 and evaluated using the metrics from the project “A Unified Video Segmentation Benchmark: Annotation, Metrics and Analysis” by Fabio Galasso.
+This project segment objects in video sequences using the SegNI method explained in:
 
-Before using this project ensure having downloaded the whole files incluiding the BenchmarBseg.rar file that is in the master branch and have them in the same folder. To run this project, open the ppal.m file, when click “run” it will show an interface to choose a video example to segmentate or chose a custom one, to evaluate the segmentation uncomment the lines 152 to 158 to save the segmentations in the folder …\NISeg\BenchmarkBseg\Evaluation\Algorithm_Bseg\ Ucm2 (here is needed to create the folders where the segmentations are going to be saved) ensure to have the corresponding groundtruth at …\NISeg\BenchmarkBseg\Evaluation\Algorithm_Bseg\Groundtruth and then run ppal_eval.m file to get the metrics of spatial coherency and temporal coherency in the MATLAB command window.
+Juan A. Ramirez-Quintana, Raul Rangel-Gonzalez, Mario I. Chacon-Murguia,  Graciela Ramirez-Alonso, A Visual Object Segmentation Algorithm with Spatial and Temporal Coherence Inspired by the Architecture of the Visual Cortex, Cognitive Processing.
 
-This project run in the MATLAB version R2016a.
+SegNI was tested in the database of VSB100 and evaluated using the metrics from the project “A Unified Video Segmentation Benchmark: Annotation, Metrics and Analysis” by Fabio Galasso [1]. 
+
+To run SegNI follow the next instructions
+1.	Download the repository of SegNI in a zip file.
+2.	Uncompress the zip file in a folder wich name doesn’t have spaces.
+3.	Open the file ppal.m and run it. This file will show a window with the options of “Video example” (to segment a video example) and “Load video” (to segment a custom video). 
+4.	Chose Video example to ensure the project is working correctly.
+5.	To run and evaluate SegNI in the Benchmark of VSB100 follow the next steps:
+  a.	Download the file BenchmarkBseg.rar that is in the master branch of the repository.
+  b.	Uncompress the file in the same directory of SegNI.
+  c.	Uncomment the lines 152 to 158 to save the segmentations.
+  d.	Run ppal.m and chose Load video option and then select the folder …\NISeg\BenchmarkBseg\Evaluation\Algorithm_Bseg\Images.
+  e.	Open ppal_eval.m file and run it to evaluate the segmentations.
+  f.	When the evaluation finishes the console will show the metrics of spatial coherency as Boundary PR global and temporal coherency as Volume PR global.
+
+This project runs in the MATLAB version R2016a.
 
 For any questions you can contact us by email: raul.rng07@gmail.com and juan.rq@chihuahua.tecnm.mx.
+
+[1] F. Galasso, N. S. Nagaraja, T. J. Cárdenas, T. Brox and B. Schiele, "A Unified Video Segmentation Benchmark: Annotation, Metrics and Analysis," 2013 IEEE International Conference on Computer Vision, 2013, pp. 3527-3534, doi: 10.1109/ICCV.2013.438.
